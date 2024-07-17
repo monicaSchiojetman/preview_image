@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Previsualizar imagen</title>
+  </head>
+
+  <body>
+    <h1>Previsualización de imagen</h1>
+
+    <img id="imgPreview" />
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <input
+        type="file"
+        accept="image/*"
+        onchange="previewImage(event, '#imgPreview')" />
+
+      <button>Enviar formulario</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
